@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/product', 'Vendor\ProductController@new')->name('newProduct');
+Route::get('/product', 'Vendor\ProductController@newProduct')->name('newProduct');
 
 Route::get('/product/{id?}', 'Vendor\ProductController@editProduct')->name('editProduct');
 
