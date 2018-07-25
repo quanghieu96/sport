@@ -14,3 +14,22 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('users/login', [
+    'as' => 'login',
+    'uses' => 'Auth\LoginController@showLoginForm'
+]);
+
+Route::group(array('prefix' => 'vendor', 'namespace' => 'Vendor', 'middleware' => 'vendor'), function () {
+
+    Route::get('/login', 'VendorsController@showLoginForm');
+
+    Route::get('/logout', 'VendorsController@logout');
+
+    Route::get('/product/new', 'VendorsController@createProduct');
+
+    Route::get('/product/{id}', 'VendorsController@editProduct');
+
+});
