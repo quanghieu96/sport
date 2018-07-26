@@ -7,12 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DeluxHotel - Responsive Bootstrap 4 Template For Hotels</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{--<link rel="shortcut icon" href="../assets/images/favicon/favicon.png">--}}
-    {{--<link rel="stylesheet" href="../assets/css/style.css">--}}
-    {{--<link rel="stylesheet" href="../assets/css/responsive.css">--}}
-    <link rel="stylesheet" href="{!! asset('images/favicon/favicon.png') !!}">
-    <link rel="stylesheet" href="{!! asset('css/assets/style.css') !!}">
-    <link rel="stylesheet" href="{!! asset('css/assets/responsive.css') !!}">
+
+    <link rel="stylesheet" href="{!! asset('bower_components/template_delux_hotel/assets/images/favicon/favicon.png') !!}">
+    <link rel="stylesheet" href="{!! asset('bower_components/template_delux_hotel/assets/css/style.css') !!}">
+    <link rel="stylesheet" href="{!! asset('bower_components/template_delux_hotel/assets/css/responsive.css') !!}">
 
 
 </head>
@@ -24,18 +22,18 @@
 @include('shared.footer')
 
 
-<script type="text/javascript" src="{!!asset('js/assets/js/jquery.min.js')  !!}"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/tether.min.js') !!}"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/bootstrap.min.js') !!}"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/jquery-ui.min.js') !!}"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/moment.min.js') !!}"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/jquery.smartmenus.js') !!}"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/jquery.parallax.min.js') !!}"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/jquery.shuffle.min.js') !!}"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/owl.carousel.min.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/jquery.min.js')  !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/tether.min.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/bootstrap.min.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/jquery-ui.min.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/moment.min.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/jquery.smartmenus.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/jquery.parallax.min.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/jquery.shuffle.min.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/owl.carousel.min.js') !!}"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/map.js') !!}"></script>
-<script type="text/javascript" src="{!!asset('js/assets/js/main.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/map.js') !!}"></script>
+<script type="text/javascript" src="{!!asset('bower_components/template_delux_hotel/assets/js/main.js') !!}"></script>
 
 </body>
 </html>
