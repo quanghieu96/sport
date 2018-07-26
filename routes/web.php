@@ -29,6 +29,7 @@ Route::get('users/login', [
     'uses' => 'Auth\LoginController@showVendorLoginForm'
 ]);*/
 
+Route::get('/products', 'ProductsController@index');
 
 Route::group(array('prefix' => 'vendor','namespace' => 'Vendor' , 'middleware' => 'vendor')
     ,
