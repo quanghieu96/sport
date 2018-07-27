@@ -28,8 +28,8 @@ Route::get('users/login', [
     'as' => 'login',
     'uses' => 'Auth\LoginController@showVendorLoginForm'
 ]);*/
-
-Route::get('/products', 'ProductsController@index');
+Route::get('/vendorLogin', "Auth\LoginController@showVendorLoginForm");
+Route::get('/vendorRegister','Auth\LoginController@register');
 
 Route::group(array('prefix' => 'vendor','namespace' => 'Vendor' , 'middleware' => 'vendor')
     ,
@@ -39,6 +39,4 @@ Route::group(array('prefix' => 'vendor','namespace' => 'Vendor' , 'middleware' =
         Route::get('/login', "VendorsController@showLoginForm");
 
         Route::get('/logout',"VendorsController@logout");
-
-
     });
