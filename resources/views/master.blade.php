@@ -14,8 +14,7 @@
 
 </head>
 <body>
-@include('master')
-
+@include('shared.header')
 
 @yield('content')
 

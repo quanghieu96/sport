@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/vendormaster', function () {
+    return view('admin.shared.master');
+});
+
 Auth::routes();
 
 
