@@ -15,10 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/vendormaster', function () {
-    return view('admin.shared.master');
-});
-
+Route::get('/vendormaster', 'Vendor\VendorsController@getHomeData');
 Auth::routes();
 
 

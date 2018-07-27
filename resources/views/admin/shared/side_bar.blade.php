@@ -1,5 +1,3 @@
-
-
 <body class="nav-md">
 <div class="container body">
     <div class="main_container">
@@ -189,9 +187,4 @@
             </div>
         </div>
         <!-- /top navigation -->
-
-
-
-
 </body>
-
