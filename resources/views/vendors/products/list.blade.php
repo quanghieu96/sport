@@ -12,9 +12,9 @@
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
                             <tr>
-                                <th>{{__("Địa chỉ")}}</th>
-                                <th>{{__("Thông tin")}}</th>
-                                <th>{{__("Trạng thái")}}</th>
+                                <th>{{ __("Địa chỉ") }}</th>
+                                <th>{{ __("Thông tin") }}</th>
+                                <th>{{ __("Trạng thái") }}</th>
                             </tr>
                             </thead>
                             <tbody>
