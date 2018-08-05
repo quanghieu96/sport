@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/product', 'Vendor\ProductController@new')->name('newProduct');
+
+Route::get('/product/{id?}', 'Vendor\ProductController@editProduct')->name('editProduct');
+
+Route::post('/product', 'Vendor\ProductController@store')->name('storeProduct');
+
 Auth::routes();
 
 Route::get('users/login', [
@@ -23,6 +29,8 @@ Route::get('users/login', [
 ]);
 
 Route::group(array('prefix' => 'vendor', 'namespace' => 'Vendor', 'middleware' => 'vendor'), function () {
+
+    Route::get('/', 'VendorsController@home');
 
     Route::get('/login', 'VendorsController@showLoginForm');
 
